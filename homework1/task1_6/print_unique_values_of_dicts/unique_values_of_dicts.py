@@ -20,10 +20,3 @@ def get_values(d):
 def get_unique_values_of_dicts(dicts):
     lists_of_values = list(map(get_values, dicts))
     return set(reduce(merge_lists, lists_of_values))
-
-
-print(
-    get_unique_values_of_dicts(
-        [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII": "S005"}, {"V": "S009"}, {"VIII": "S007"}]
-    )
-)
