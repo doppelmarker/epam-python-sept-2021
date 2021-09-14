@@ -30,6 +30,3 @@ def print_multiplication_table(a, b, c, d):
                 print(f"{range(a, b + 1)[row_idx]:7}", end="")
             print(f"{row_val * col_val:7}", end="")
         print("\n")
-
-
-print_multiplication_table(2, 4, 5, 7)
